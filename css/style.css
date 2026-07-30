@@ -26,6 +26,7 @@ body {
   line-height: 1.65;
   background: var(--white);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 a { text-decoration: none; color: inherit; }
@@ -458,9 +459,31 @@ form.contact-form input:focus, form.contact-form textarea:focus { outline:2px so
   .nav-links.open { transform: translateY(0); }
   .nav-links a { padding: 14px 16px; }
   .nav-cta { display: none; }
+
+  /* Mobilde bölüm boşluklarını küçült */
+  .section { padding: 52px 0; }
+  .cta-band { flex-direction: column; align-items: flex-start; padding: 34px 26px; }
+  .two-col { gap: 32px; }
+  .cards, .steps { gap: 32px; }
+}
+@media (max-width: 600px) {
+  /* Butonları tam genişlik ve kolay dokunulur yap */
+  .hero-actions, .cta-band .actions { flex-direction: column; align-items: stretch; width: 100%; }
+  .hero-actions .btn, .cta-band .actions .btn { width: 100%; justify-content: center; }
+  .btn { padding: 15px 22px; }
+  .hero h1 { font-size: 1.9rem; }
+  .section-head h2 { font-size: 1.55rem; }
 }
 @media (max-width: 520px) {
   .features-grid { grid-template-columns: 1fr; }
-  .stats { grid-template-columns: 1fr 1fr; }
-  .cta-band { padding: 36px 24px; }
+  .stats { grid-template-columns: 1fr 1fr; gap: 28px 16px; }
+  .stat b { font-size: 2rem; }
+  .cta-band { padding: 30px 22px; }
+  .media-box { padding: 30px 24px; }
+  .brand-name b { font-size: 1.05rem; }
+  .brand-name span { font-size: .62rem; letter-spacing: 2px; }
+  /* Yüzen butonlar biraz küçülsün */
+  .fab a { width: 52px; height: 52px; }
+  .fab svg { width: 25px; height: 25px; }
+  .fab-call { bottom: 84px; }
 }
