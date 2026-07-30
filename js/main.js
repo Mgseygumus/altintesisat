@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var tel = (form.querySelector('[name="telefon"]') || {}).value || '';
       var mesaj = (form.querySelector('[name="mesaj"]') || {}).value || '';
       var text = 'Merhaba, ben ' + ad + '. Tel: ' + tel + '. ' + mesaj;
-      window.open('https://wa.me/905309171863?text=' + encodeURIComponent(text), '_blank');
+      window.open('https://wa.me/905005005050?text=' + encodeURIComponent(text), '_blank');
     });
   }
 });
