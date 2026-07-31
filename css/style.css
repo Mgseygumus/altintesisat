@@ -9,7 +9,8 @@
   --text: #1f2a37;
   --muted: #5b6b7d;
   --white: #ffffff;
-  --bg-soft: #f5f7fa;
+  --bg-soft: #dbe4f0;
+  --bg-page: #e8eef6;
   --wa: #25d366;
   --shadow: 0 10px 30px rgba(11, 26, 48, 0.12);
   --radius: 16px;
@@ -24,7 +25,7 @@ body {
   font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   color: var(--text);
   line-height: 1.65;
-  background: var(--white);
+  background: var(--bg-page);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
