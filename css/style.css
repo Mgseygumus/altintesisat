@@ -265,11 +265,14 @@ img { max-width: 100%; display: block; }
 
 /* ===== Service cards ===== */
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 26px;
 }
 .card {
+  flex: 1 1 250px;
+  max-width: 300px;
   background: #fff;
   border: 1px solid #e7ecf2;
   border-radius: var(--radius);
@@ -405,7 +408,7 @@ form.contact-form input:focus, form.contact-form textarea:focus { outline:2px so
     linear-gradient(120deg, rgba(8,18,34,.95), rgba(16,35,63,.85)),
     radial-gradient(circle at 85% 30%, rgba(201,162,74,.25), transparent 45%),
     var(--navy);
-  color:#fff; padding: 64px 0; text-align:center;
+  color:#fff; padding: 38px 0 42px; text-align:center;
 }
 .page-hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight:900; }
 .page-hero p { color:#c9d4e0; margin-top:12px; font-size:1.1rem; }
