@@ -408,11 +408,11 @@ form.contact-form input:focus, form.contact-form textarea:focus { outline:2px so
     linear-gradient(120deg, rgba(8,18,34,.95), rgba(16,35,63,.85)),
     radial-gradient(circle at 85% 30%, rgba(201,162,74,.25), transparent 45%),
     var(--navy);
-  color:#fff; padding: 38px 0 42px; text-align:center;
+  color:#fff; padding: 16px 0 18px; text-align:center;
 }
-.page-hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight:900; }
-.page-hero p { color:#c9d4e0; margin-top:12px; font-size:1.1rem; }
-.breadcrumb { margin-top:16px; color: var(--gold-light); font-weight:600; font-size:.9rem; }
+.page-hero h1 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight:900; line-height:1.15; }
+.page-hero p { color:#c9d4e0; margin-top:4px; font-size:1rem; }
+.breadcrumb { margin-top:6px; color: var(--gold-light); font-weight:600; font-size:.82rem; }
 .breadcrumb a { opacity:.85; }
 .breadcrumb a:hover { opacity:1; }
 
