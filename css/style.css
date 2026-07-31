@@ -251,6 +251,18 @@ img { max-width: 100%; display: block; }
 }
 .section-head p { color: var(--muted); font-size: 1.05rem; }
 
+/* ===== Grup başlığı ===== */
+.group-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.3rem; color: var(--navy); font-weight: 900;
+  margin-bottom: 22px; padding-bottom: 12px;
+  border-bottom: 2px solid #eceff3;
+}
+.group-title::after {
+  content: ""; flex: 1; height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+
 /* ===== Service cards ===== */
 .cards {
   display: grid;
